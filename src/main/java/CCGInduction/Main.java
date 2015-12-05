@@ -31,7 +31,7 @@ public strictfp class Main {
       Start = new java.sql.Timestamp(
           Calendar.getInstance().getTime().getTime()).getTime();
       if (args.length < 1) {
-        System.err.println("For training a parser/HMM: java -jar HDPCCG.jar config.txt");
+        System.err.println("For training a parser/HMM: java -jar CCGInduction.jar config.txt");
         System.err.println("For Evaluation:");
         System.err.println("\t\tjava -cp CCGInduction.jar CCGInduction.evaluation.PARGDependencies");
         System.err.println("\t\tjava -cp CCGInduction.jar CCGInduction.evaluation.CoNLLDependencies");
