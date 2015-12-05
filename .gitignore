@@ -1,0 +1,7 @@
+# Created by .gitignore support plugin (hsz.mobi)
+hdp-ccg.iml
+.idea
+target
+
+# Experiment-specific files
+out-*

@@ -1,0 +1,62 @@
+// English
+#        punct          // Hash
+,        punct conj     // Comma
+$        punct          // Dollar
+:        punct          // Colon
+--       punct          // m-dash
+-        punct          // n-dash
+.        punct          // Period
+?        punct          // Period
+!        punct          // Period
+;        punct conj     // Semi-Colon
+``  ''        bracket   // Quote
+-LRB-  -RRB-  bracket   // LRB
+(       )     bracket   // LRB
+{       }     bracket
+[       ]     bracket
+LQU     RQU   bracket
+CC       conj           // Coordinating conjunction
+CD       noun           // Cardinal number
+DT                      // Determiner         (Maybe not a noun?)
+EX       noun           // Existential there
+FW       noun           // Foreign word
+IN       func           // Preposition or subordinating conjunction
+JJ                      // Adjective
+JJR                     // Adjective, comparative
+JJS                     // Adjective, superlative
+LS                      // List item marker
+MD       verb    top    // Modal
+NN       noun           // Noun, singular or mass
+NNS      noun           // Noun, plural
+NNP      noun           // Proper noun, singular
+NNPS     noun           // Proper noun, plural
+PDT      func           // Predeterminer
+PRT      func           // CHILDES (preposition/determiner)
+POS                     // Possessive ending
+PRP      noun           // Personal pronoun
+PRP$     noun           // Possessive pronoun
+RB                      // Adverb
+RBR                     // Adverb, comparative
+RBS                     // Adverb, superlative
+RP                      // Particle
+SYM                     // Symbol
+TO       func           // to
+A        func           // CHILDES to (used with base form verbs)
+UH       noun           // Interjection
+VP       verb    top    // CHILDES Verb
+VB       verb    top    // Verb, base form
+VBD      verb    top    // Verb, past tense
+VBG      verb           // Verb, gerund or present participle
+VBN      verb    top    // Verb, past participle
+VBP      verb    top    // Verb, non-3rd person singular present
+VBZ      verb    top    // Verb, 3rd person singular present
+WDT                     // Wh-determiner
+WP                      // Wh-pronoun
+WHNP                    // CHILDES Wh-pronoun (that)
+WP$                     // Possessive wh-pronoun
+WRB                     // Wh-adverb
+SO
+AS
+AUX     verb            // CHILDES Auxiliary verb
+AUXG    verb            // CHILDES Auxiliary verb gerund
+GW      noun            // CHILDES unknown

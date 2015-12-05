@@ -1,0 +1,57 @@
+// English
+#        punct          // Hash
+,        punct conj     // Comma
+$        punct          // Dollar
+:        punct          // Colon
+--       punct          // m-dash
+-        punct          // n-dash
+.        punct          // Period
+?        punct          // Period
+!        punct          // Period
+;        punct conj     // Semi-Colon
+``  ''        bracket   // Quote
+`  '        bracket   // Quote
+-LRB-  -RRB-  bracket   // LRB
+LRB  RRB  bracket   // LRB
+(       )     bracket   // LRB
+{       }     bracket
+[       ]     bracket
+LQU     RQU   bracket
+CC       conj           // Coordinating conjunction
+CD       noun           // Cardinal number
+DT       noun           // Determiner         (Maybe not a noun?)
+EX       noun           // Existential there
+FW       noun           // Foreign word
+IN                      // Preposition or subordinating conjunction
+JJ                      // Adjective
+JJR                     // Adjective, comparative
+JJS                     // Adjective, superlative
+LS                      // List item marker
+MD       verb           // Modal
+NN       noun           // Noun, singular or mass
+NNS      noun           // Noun, plural
+NNP      noun           // Proper noun, singular
+NNPS     noun           // Proper noun, plural
+PDT                     // Predeterminer
+POS                     // Possessive ending
+PRP      noun           // Personal pronoun
+PRP$     noun           // Possessive pronoun
+RB                      // Adverb
+RBR                     // Adverb, comparative
+RBS                     // Adverb, superlative
+RP                      // Particle
+SYM                     // Symbol
+TO                      // to
+UH       noun           // Interjection
+VB       verb           // Verb, base form
+VBD      verb           // Verb, past tense
+VBG      verb           // Verb, gerund or present participle
+VBN      verb           // Verb, past participle
+VBP      verb           // Verb, non-3rd person singular present
+VBZ      verb           // Verb, 3rd person singular present
+WDT                     // Wh-determiner
+WP       ques           // Wh-pronoun
+WP$                     // Possessive wh-pronoun
+WRB                     // Wh-adverb
+SO
+AS

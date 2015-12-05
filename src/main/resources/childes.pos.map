@@ -1,0 +1,77 @@
+// Childes - Fine tagset
+!                         fs           // 
++"/.                      fs           // Quotation Follows (content from story reading)
++...                      fs           // Trailing off
++/.                       fs           // Interruption
+.                         fs           // 
+?                         fs           // 
+0prep                                     // 
+0pro                      noun            // 
+L2                                        // Second=language form
+adj                                       // Adjective
+adj:n                                     // Adjective, (Careless, Squirrely, ...)
+adj:v                                     // Adjective, (Double, gently, ... )
+adv                                       // Adverb (well)
+adv:adj                                   // Adverb, ending in ly (quickly)
+adv:int                                   // Adverb, intensifying (very, rather)
+adv:loc                                   // Adverb, locative (here,then)
+adv:tem                                   // Adverb, time (then, today)
+adv:wh                                    // Adverb, (when, why)
+aux                       verb            // verb, modal auxiliary
+bab                                       // babbling
+chi                                       // child-invented form
+co                                        // Communicator (aha)
+co#v                      verb            // (copilot)
+co:voc                                    // (Dear) Adverb?
+conj:coo                  conj            // Conjunction, coordinating (and,or)
+conj:sub                                  // Conjunction, subordinating (if, although)
+conj:subor                                // Conjunction,
+det                       noun            // Determiner
+det:num                   noun            // Number
+det:wh                    noun            // (Which, Who)
+dis#n:gerund              noun            // (disappearing)
+dis#part                  verb            // (disappeared)
+dis#v                     verb            // (disappear) 
+fam                                       // Family-specific form (buba, oy )
+fil                                       // Filler (hmm)
+inf                       verb            // Infinitive market _to_
+int                                       // interjection, interaction
+mis#part                  verb            // (misplaced, misunderstood)
+mod                       verb            // (did,do,may,will)
+n                         noun            // Noun common
+n:adj                     noun            // (-ness)
+n:gerund                  noun            // -ing (missing, doing, ...)
+n:let                     noun            // Multiple letters
+n:prop                    noun            // Proper noun
+n:pt                      noun            // (Pants, clothes)
+n:v                       noun            // (-er)
+neg                                       // negation
+neo                                       // neologism (becauses)
+on                                        // onomatopoeia
+part                      verb            // Participle (doing)
+poss                                      // Possessive
+post                                      // (else, too)
+pre#n                     noun            // (preschool)
+prep                                      // Preposition
+pro                       noun            // Pronoun
+pro:dem                   noun            // Pronoun, demonstrative (this, that)
+pro:indef                 noun            // Pronoun (one,somebody,...)
+pro:poss                  noun            // Pronoun (mine,yours,his)
+pro:poss:det                              // Pronoun (her, your)
+pro:refl                  noun            // Pronoun ( -self ) 
+pro:wh                    noun            // ( what )
+qn                                        // Quantifier
+re#part                   verb            // (reheated)
+re#v                      verb            // (rewind)
+rel                                       // (that, which)
+tag                       punct           // (,,)
+test                                      // test word
+un#adj                                    // (un- )  unhappy,...
+un#n                      noun            // (un- )  untie, unscrew, ...
+un#part                   verb            // (un- )  unmade, untied, ...
+un#v                      verb            // (un- )  untie, unbutton, ... 
+under#n                   noun            // (undershirt)
+unk                                       // Excluded words (xxx,www,...)
+v                         verb            // Verb
+v:cop                     verb            // Verb, Copula (is,be)
+wplay                                     // (caboozle, billy, toebow, ...)
