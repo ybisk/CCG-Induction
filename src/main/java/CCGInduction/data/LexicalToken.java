@@ -10,6 +10,8 @@ import java.io.Writer;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static CCGInduction.data.Tagset.TAG_TYPE.*;
+
 /**
  * A Lexical item which contains part-of-speech tags, word forms and optional
  * category
@@ -54,17 +56,17 @@ public class LexicalToken implements Serializable {
    */
   public void tag(POS posTag) {
     switch (Configuration.tagType) {
-    case Tagset.TAG_TYPE.Coarse:
+    case Coarse:
       tags[0] = posTag;
       break;
-    case Tagset.TAG_TYPE.Custom:
-    case Tagset.TAG_TYPE.Fine:
+    case Custom:
+    case Fine:
       tags[1] = posTag;
       break;
-    case Tagset.TAG_TYPE.Universal:
+    case Universal:
       tags[2] = posTag;
       break;
-    case Tagset.TAG_TYPE.Induced:
+    case Induced:
       tags[3] = posTag;
       break;
     default:
@@ -79,14 +81,14 @@ public class LexicalToken implements Serializable {
    */
   public POS tag() {
     switch (Configuration.tagType) {
-    case Tagset.TAG_TYPE.Coarse:
+    case Coarse:
       return tags[0];
-    case Tagset.TAG_TYPE.Custom:
-    case Tagset.TAG_TYPE.Fine:
+    case Custom:
+    case Fine:
       return tags[1];
-    case Tagset.TAG_TYPE.Universal:
+    case Universal:
       return tags[2];
-    case Tagset.TAG_TYPE.Induced:
+    case Induced:
       return tags[3];
     }
     return null;

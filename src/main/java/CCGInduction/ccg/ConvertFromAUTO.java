@@ -18,6 +18,8 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static CCGInduction.ccg.AUTOConversion.*;
+
 /**
  * A Simple class for converting AUTO parses into dependencies or TeX
  */
@@ -57,17 +59,17 @@ public class ConvertFromAUTO {
 
       String output = "%FAIL: " + line;
       switch (Configuration.ConvertAUTO) {
-        case AUTOConversion.PARG:
+        case PARG:
           Chart.featureStructure(parse_tree, CCGcat.DepType.CCG, model); // CCGCat issue
           JSONFormat.createFromSentence(sentence, grammar);
           output = JSONFormat.pargString(Chart.CCGdependencies(parse_tree, sentence), sentence.JSON);
           break;
-        case AUTOConversion.CONLL:
+        case CONLL:
           Chart.featureStructure(parse_tree, CCGcat.DepType.CoNLL, model); // CCGCat issue
           JSONFormat.createFromSentence(sentence, grammar);
           output = JSONFormat.conllString(Chart.CoNLLdependencies(parse_tree, sentence), sentence.JSON) + "\n";
           break;
-        case AUTOConversion.TEX:
+        case TEX:
           if (count == 0) {
             createTeXHeader(writer);
           }
@@ -85,7 +87,7 @@ public class ConvertFromAUTO {
       writer.write(output + "\n");
       Logger.stat(++count);
     }
-    if (Configuration.ConvertAUTO == AUTOConversion.TEX){
+    if (Configuration.ConvertAUTO == TEX){
       closeTeXFile(writer);
     }
     reader.close();

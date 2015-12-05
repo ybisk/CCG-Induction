@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static CCGInduction.grammar.GrammarInductionUtils.*;
+
 /**
  * Class for inducing categories from a local context
  * @author bisk1
@@ -132,6 +134,8 @@ public class GrammarInductionFromTags extends Mapper<Grammar, InductionChart<Gra
       }
     }
   }
+
+
 
   private static boolean useCFG(InducedCAT cat) {
     return cat.D.equals(Direction.None) && (InducedCAT.CONJ(cat) || InducedCAT.PUNC(cat.atom));

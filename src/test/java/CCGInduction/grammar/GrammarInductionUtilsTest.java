@@ -6,6 +6,8 @@ import junit.framework.TestCase;
 
 import java.util.concurrent.ConcurrentHashMap;
 
+import static CCGInduction.grammar.GrammarInductionUtils.*;
+
 public class GrammarInductionUtilsTest extends TestCase {
 
   private final InducedCAT N = new InducedCAT(InducedCAT.N);

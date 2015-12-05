@@ -2,6 +2,8 @@ package CCGInduction.ccg;
 
 import junit.framework.TestCase;
 
+import static CCGInduction.ccg.CCGcat.*;
+
 public class CCGcatTest extends TestCase {
 
   /**
