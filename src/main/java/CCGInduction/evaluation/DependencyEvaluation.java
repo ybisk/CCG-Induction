@@ -74,7 +74,7 @@ public class DependencyEvaluation {
         // Compute oracle's correct edges and # of predicted edges
         int bestScore = 0;
         Graph bestGraph = systGraphs.get(0);          // Init with viterbi
-        if ((goldGraph.size(null) != bestGraph.size(null)) && (bestGraph.size(null) != 0))
+        if ((goldGraph.size(null) != bestGraph.size(null)) && (bestGraph.size(null) != 0) && edgeType == EdgeType.CONLL)
           System.err.println("Dependency numbers don't match: " + i);
         if (arguments.oracle) {
           // Choose best system graph
