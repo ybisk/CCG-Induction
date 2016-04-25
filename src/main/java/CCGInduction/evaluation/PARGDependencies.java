@@ -114,7 +114,7 @@ public class PARGDependencies extends DependencyEvaluation {
     PARGDep[] deps;
     for (JSONFormat json : goldJSON) {
       ArrayList<Graph> graphForCurrentSentence = new ArrayList<>();
-      if (json.synPars != null) {
+      if (json.synPars != null && json.synPars[0].depParse != null) {
         for (SynParObj parseObject : json.synPars) {
           deps = parseObject.depParse;
           current = new Graph(json.length_noP());

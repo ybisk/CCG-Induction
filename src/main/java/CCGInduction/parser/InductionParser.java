@@ -32,7 +32,9 @@ public class InductionParser<G extends Grammar> extends CYKParser<G> {
 
   @Override
   public void parse(Model<G> model, Chart<G> chart) {
-    if (chart.sentence.JSON != null && chart.sentence.JSON.synPars != null) {
+    if (chart.sentence.JSON != null
+        && chart.sentence.JSON.synPars != null
+        && chart.sentence.JSON.synPars[0].synPar != null) {
       chart.fromAUTO(this);
     } else if (this.parse_action.equals(Action.Supervised)) {
       chart.fromAUTO(this);
