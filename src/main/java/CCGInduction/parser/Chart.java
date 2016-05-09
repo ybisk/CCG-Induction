@@ -652,7 +652,7 @@ public abstract strictfp class Chart<G extends Grammar> implements Externalizabl
 
     if ((sentence.get(0).universal() != null && sentence.get(0).universal().toString().equals("NUM"))
         || (sentence.get(0).tag() != null && sentence.get(0).tag().toString().equals("CD")))
-      TeXParse.append(Logger.escape_chars(grammar.Words.get(sentence.get(0).lemma())));
+      TeXParse.append(Logger.escape_chars(grammar.Words.get(sentence.get(0).rawWord())));
     else
       TeXParse.append(Logger.escape_chars(grammar.Words.get(sentence.get(0).word())));
 
@@ -669,7 +669,7 @@ public abstract strictfp class Chart<G extends Grammar> implements Externalizabl
       }
 
       if (sentence.get(i).universal().toString().equals("NUM") || sentence.get(i).tag().toString().equals("CD"))
-        TeXParse.append(Logger.escape_chars(grammar.Words.get(sentence.get(i).lemma())));
+        TeXParse.append(Logger.escape_chars(grammar.Words.get(sentence.get(i).rawWord())));
       else
         TeXParse.append(Logger.escape_chars(grammar.Words.get(sentence.get(i).word())));
 
@@ -742,10 +742,11 @@ public abstract strictfp class Chart<G extends Grammar> implements Externalizabl
         // Standard AUTO
         // (<L ccgcategory tag tag word indexed>)
         String word = grammar.Words.get(sentence.get(Tree.X).rawWord());
+        String lemma = grammar.Words.get(sentence.get(Tree.X).lemma());
         if (Configuration.auto_type.equals(AUTO_TYPE.CANDC)) {
           AUTOparse.append(" (<L ").append(grammar.prettyCat(Tree.parentCategory).replace("\\.", "\\").replace("/.", "/"))
               .append(' ').append(word)
-              .append(' ').append(word)
+              .append(' ').append(lemma)
               .append(' ').append(sentence.get(Tree.X).tag())
               .append(" _ _ ").append(Tree.ccgcat.catStringIndexed())
               .append('>');

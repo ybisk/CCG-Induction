@@ -122,7 +122,6 @@ public class Sentence implements Externalizable, Iterable<LexicalToken> {
     }
     if (tag.isNum() || (Configuration.hasUniversalTags && s[5].equals("NUM"))) {
       w = Tagset.convertNumber(s[1]);
-      lemma = grammar.Lex(s[1]);
     } else if (s[1].equals("_")) {
       w = "UNDERSCORE";
     } else {
@@ -212,7 +211,6 @@ public class Sentence implements Externalizable, Iterable<LexicalToken> {
     // but store the original value in the lemma
     if ((word_obj.pos != null && word_obj.pos.equals("CD"))
         || (word_obj.upos != null && word_obj.upos.equals("NUM"))) {
-      lemma = word;
       word = g.Lex(Tagset.convertNumber(word_obj.word));
     }
     LexicalToken lt = new LexicalToken(raw, word, lemma, CPOSTAG, POSTAG, Universal, Induced, FBID);
@@ -374,7 +372,7 @@ public class Sentence implements Externalizable, Iterable<LexicalToken> {
    * @param j to
    * @return Yield
    */
-  final String asWords(Grammar g, int i, int j) {
+  public final String asWords(Grammar g, int i, int j) {
     String toRet = "";
     for (; i <= j; i++) {
       toRet += get(i).word(g) + " ";
